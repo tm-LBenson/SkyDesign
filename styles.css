@@ -1,0 +1,135 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+.header {
+    background-color: #005A9C;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header__logo {
+    width: 200px; /* Adjust as necessary */
+}
+
+/* Navigation */
+.nav__list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero__title {
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.hero__text {
+    margin: 0 0 20px 0;
+}
+
+.hero__cta {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services section */
+.services {
+    padding: 40px 20px;
+}
+
+.services__title,
+.portfolio__title {
+    text-align: center;
+    color: #333;
+}
+
+.service,
+.portfolio__item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service__title {
+    margin: 10px 0;
+}
+
+.service__description {
+    margin: 0;
+}
+
+/* Portfolio section */
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.portfolio__item {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .portfolio__item {
+        width: calc(50% - 20px);
+    }
+}
